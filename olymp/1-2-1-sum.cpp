@@ -2,19 +2,22 @@
 
 using namespace std;
 
-using number = int;
-number a, b;
+int n;
 
-number sum = 0;
+long long sum = 0;
 
 int main()
 {
 	ios_base::sync_with_stdio(0);
 	cin.tie(0);
 
-	cin >> a >> b;
+	cin >> n;
 
-    sum = a+b;
-
+	for (int i = 0; i < n; ++i)
+	{
+		int a;
+		cin >> a;
+		sum+=a;
+	}	
 	cout <<sum;
 }
